@@ -1,0 +1,89 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #081b29;
+    color: #ededed;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  header {
+    background-color: #112e43;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1.3rem;
+  }
+  
+  nav a:hover {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  main {
+    padding: 40px 50px;
+    flex-grow: 1; /* Ensures the main content takes up remaining space */
+  }
+  
+  .repositories h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .repo-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .repo-item {
+    background-color: #00abf0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .repo-item h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+  
+  .repo-item p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .repo-link {
+    
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  /* Footer styling */
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+
+  }
